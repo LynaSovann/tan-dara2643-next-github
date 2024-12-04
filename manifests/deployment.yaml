@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tan-dara2643-next-github-deployment
+  labels:
+    app: tan-dara2643-next-github
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tan-dara2643-next-github
+  template:
+    metadata:
+      labels:
+        app: tan-dara2643-next-github
+    spec:
+      containers:
+        - name: tan-dara2643-next-github-container
+          image: pipejet/tan-dara2643-next-github:0
+          ports:
+            - containerPort: 3000
