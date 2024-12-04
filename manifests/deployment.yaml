@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: tan-dara2643-next-github-container
-          image: pipejet/tan-dara2643-next-github:0
+          image: pipejet/tan-dara2643-next-github:1
           ports:
             - containerPort: 3000
