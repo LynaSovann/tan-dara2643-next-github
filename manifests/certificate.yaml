@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: tan-dara2643-next-github-certificate
+  namespace: tan-dara2643-next-github
+spec:
+  secretName: tan-dara2643-next-github-secret-tls
+  commonName: tan-dara2643-next-github.assessify.org
+  dnsNames:
+  - tan-dara2643-next-github.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
